@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: gulimall-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 39.105.195.6:2001
+        file-extension: yaml
+    gateway:
+      discovery:
+        locator:
+          # 开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          enabled: true
